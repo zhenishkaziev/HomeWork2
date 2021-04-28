@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/treu"
+    tools:context=".SecondNeedActivity">
+
+
+
+
+    <Button
+        android:id="@+id/chrome_bnt"
+        android:text="Open browser"
+        android:textColor="@color/black"
+        android:layout_width="300dp"
+        android:textStyle="italic"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="55dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/camera_bnt"
+        android:textStyle="normal"
+        android:layout_marginLeft="55dp"
+        android:layout_below="@+id/chrome_bnt"
+        android:text="Camera of phone"
+        android:backgroundTint="@color/teal_700"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/gallery_bnt"
+        android:layout_below="@+id/camera_bnt"
+        android:text="Open gallery"
+        android:layout_marginLeft="55dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>
