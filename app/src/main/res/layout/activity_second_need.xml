@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,22 +8,39 @@
     tools:context=".SecondNeedActivity">
 
 
+    <ImageView
+        android:id="@+id/photo_im"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="380dp"
+        android:layout_width="190dp"
+        android:layout_height="130dp"/>
+
 
 
     <Button
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/chrome_bnt"
         android:text="Open browser"
         android:textColor="@color/black"
         android:layout_width="300dp"
         android:textStyle="italic"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="120dp"
         android:layout_height="wrap_content"/>
 
     <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="6dp"
         android:id="@+id/camera_bnt"
         android:textStyle="normal"
-        android:layout_marginLeft="55dp"
         android:layout_below="@+id/chrome_bnt"
         android:text="Camera of phone"
         android:backgroundTint="@color/teal_700"
@@ -31,10 +48,14 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/gallery_bnt"
         android:layout_below="@+id/camera_bnt"
         android:text="Open gallery"
-        android:layout_marginLeft="55dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:backgroundTint="@color/white"
@@ -44,4 +65,4 @@
 
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
